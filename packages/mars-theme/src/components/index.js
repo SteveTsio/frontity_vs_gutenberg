@@ -6,6 +6,7 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+import MyComponent from './mycomponent';
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -40,6 +41,8 @@ const Theme = ({ state }) => {
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
       <Main>
+        <h1>I wanted to bring my own component</h1>
+        <MyComponent />
         <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
@@ -70,11 +73,11 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #1f38c5;
+  background-color: black;
 `;
 
 const Main = styled.div`
-  display: flex;
+  display: grid;
   justify-content: center;
   background-image: linear-gradient(
     180deg,

@@ -1,5 +1,5 @@
 {
-  "name": "hello-frontity",
+  "name": "frontity",
   "version": "1.0.0",
   "private": true,
   "description": "Frontity project",
@@ -17,12 +17,11 @@
   },
   "prettier": {},
   "dependencies": {
-    "@frontity/core": "^1.16.0",
-    "@frontity/html2react": "^1.7.0",
-    "@frontity/mars-theme": "./packages/mars-theme",
-    "@frontity/tiny-router": "^1.4.4",
-    "@frontity/wp-source": "^1.11.7",
     "frontity": "^1.17.2",
-    "my-first-theme": "file:packages/my-first-theme"
+    "@frontity/core": "^1.16.0",
+    "@frontity/wp-source": "^1.11.7",
+    "@frontity/tiny-router": "^1.4.4",
+    "@frontity/html2react": "^1.7.0",
+    "@frontity/mars-theme": "./packages/mars-theme"
   }
 }
